@@ -1,0 +1,58 @@
+/* Tic Tac Toe.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: yellow;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    font-size: 2em;
+    cursor: pointer;
+    border: 6px solid red;
+}
+
+.alert-box {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+    padding: 20px;
+    border: 2px solid #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.alert-box.hidden {
+    display: none;
+}
+
+.alert-box.visible {
+    display: flex;
+}
+

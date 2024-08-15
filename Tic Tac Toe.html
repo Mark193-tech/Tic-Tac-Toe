@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="Tic Tac Toe.css">
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <div class="motto"><marquee><i>Fast Focused Fun</i></marquee></div>
+  <br>&nbsp<br>
+    <div class="scoreboard">
+        <div id="playerXScore">Player X: 0</div>
+        <div id="playerOScore">Player O: 0</div>
+        <div id="timer">Time Left: <span id="time">10</span> seconds</div>
+    </div>
+    <div class="game-board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <div id="alertBox" class="alert-box hidden">
+        <div id="winnerMessage"></div>
+        <button id="resetButton">Reset</button>
+    </div><br><br><br><br><br><br>
+  <footer>&copy Copyright Mark Wideman 2024. All rights reserved.</footer>
+    <script src="Tic Tac Toe.js"></script>
+</body>
+</html>
